@@ -1,5 +1,7 @@
+import Top from "./style"
+
 export default function Header(){
     return(
-        <>Header</>
+        <Top><h1>CINEFLEX</h1></Top>
     )
 }
