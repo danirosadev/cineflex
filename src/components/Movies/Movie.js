@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import { PosterContainer, PosterImg } from "./style"
 
-export default function Movie({poster}) {
+export default function Movie({poster, filmId}) {
     return (
-        <PosterContainer>
-            <Link to="">
-                <PosterImg data-identifier="movie-outdoor" src={poster} alt="cartaz" />
+        <PosterContainer data-test="movie">
+            <Link to={`/sessoes/${filmId}`}>
+                <PosterImg src={poster} alt="cartaz" />
             </Link>
         </PosterContainer>
     )

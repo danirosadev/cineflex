@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    width: 480px;
+    width: 100vw;
 }
 ol, ul {
 	list-style: none;
