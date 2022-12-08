@@ -36,7 +36,7 @@ const Body = styled.div`
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    margin-bottom: 125px;
 `
 
 const SeatButton = styled.button`

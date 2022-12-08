@@ -4,6 +4,7 @@ import { useState } from "react"
 import Movies from "../Movies/Movies"
 import Sessions from "../Sessions/Sessions"
 import Seats from "../Seats/Seats"
+import Success from "../Success/Success"
 
 export default function App() {
   const [name, setName] = useState('')
@@ -34,6 +35,12 @@ export default function App() {
             dia={dia} hora={hora}
             setDia={setDia} setHora={setHora}
             filme={filme} poster={poster}
+          />} />
+        <Route path="/sucesso"
+          element={<Success
+            name={name} cpf={cpf}
+            filme={filme} dia={dia}
+            hora={hora} assentos={assentos}
           />} />
       </Routes>
     </BrowserRouter>
