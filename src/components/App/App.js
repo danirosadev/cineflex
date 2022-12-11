@@ -7,14 +7,11 @@ import Seats from "../Seats/Seats"
 import Success from "../Success/Success"
 
 export default function App() {
-  const [name, setName] = useState('')
-  const [cpf, setCpf] = useState('')
-  const [ids, setIds] = useState([])
-  const [assentos, setAssentos] = useState([])
   const [filme, setFilme] = useState('')
   const [dia, setDia] = useState('')
   const [hora, setHora] = useState('')
   const [poster, setPoster] = useState('')
+  const [buyerInfo, setBuyerInfo] = useState({})
 
   return (
     <BrowserRouter>
@@ -28,19 +25,14 @@ export default function App() {
           />} />
         <Route path="/assentos/:showtimeId"
           element={<Seats
-            name={name} setName={setName}
-            cpf={cpf} setCpf={setCpf}
-            ids={ids} setIds={setIds}
-            assentos={assentos} setAssentos={setAssentos}
+            setBuyerInfo={setBuyerInfo}
             dia={dia} hora={hora}
             setDia={setDia} setHora={setHora}
             filme={filme} poster={poster}
           />} />
         <Route path="/sucesso"
           element={<Success
-            name={name} cpf={cpf}
-            filme={filme} dia={dia}
-            hora={hora} assentos={assentos}
+            buyerInfo={buyerInfo}
           />} />
       </Routes>
     </BrowserRouter>
