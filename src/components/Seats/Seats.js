@@ -15,19 +15,6 @@ export default function Seats({ setBuyerInfo, setDia, setHora, dia, hora, filme,
 
     const { showtimeId } = useParams()
 
-    // function selecionarAssento(seat) {
-    //         setClicked([...clicked, seat])
-    //         setIds([...ids, seat.id])
-    //     } else {
-    //         alert("Esse assento não está disponível");
-    //     }
-
-    //     if(seat.isSelected){
-    //         setAssentos([...assentos, seat.name])
-    //     }
-        
-    // }
-
     useEffect(() => {
         const promise = axios.get(`https://mock-api.driven.com.br/api/v8/cineflex/showtimes/${showtimeId}/seats`)
         promise.then((res) => {

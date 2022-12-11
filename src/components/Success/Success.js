@@ -25,7 +25,7 @@ export default function Success({buyerInfo}){
                     </div>
                     <div data-test="client-info">
                         <Subtitle>Comprador</Subtitle>
-                        <InfoContainer>Nome: {buyerInfo.name}</InfoContainer>
+                        <InfoContainer>Nome: {buyerInfo.buyerName}</InfoContainer>
                         <InfoContainer> CPF: {buyerInfo.cpf}</InfoContainer>
                     </div>
                 </div>
